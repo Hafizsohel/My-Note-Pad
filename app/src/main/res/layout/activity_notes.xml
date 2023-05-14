@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAD5E2"
+    android:orientation="vertical"
+    tools:context=".NotesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_save"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:padding="9dp"
+                android:src="@drawable/save_24"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </RelativeLayout>
+
+        
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_title"
+        android:hint="Title."
+        android:textColorHint="@color/black"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_notes"
+        android:hint="Add Notes."
+        android:textColorHint="@color/black"
+        android:padding="9dp"
+        android:textStyle="normal"
+        android:textSize="19sp"/>
+
+</LinearLayout>
